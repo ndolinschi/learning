@@ -1,0 +1,36 @@
+# Practice notes (CCA-F)
+
+Место для заметок по practice-вопросам и разборам сценариев.
+
+**Покрыто: 0** (ни одной practice-сессии ещё не зафиксировано).
+
+## Оговорка
+
+Публичные sample / «exam-pattern» материалы — **не аутентифицированные live-вопросы Anthropic**. Ниже — **темы** из research (независимые гайды и paraphrases), без претензии на совпадение с текущим экзаменом.
+
+## Темы sample Q из research (для ориентации формы)
+
+| Тема | Ключевой правильный рычаг (pattern) |
+|------|-------------------------------------|
+| Programmatic prerequisites vs prompts | Детерминированный gate/hook, не «усилить system prompt» |
+| Качество tool description | Описания как primary selector; границы и примеры |
+| Escalation calibration + few-shot | Явные критерии + примеры, не confidence/sentiment proxy |
+| Project vs user slash commands | `.claude/commands/` в репо для команды |
+| Plan mode для архитектуры | Plan Mode до больших multi-file / boundary decisions |
+| Path-specific rules globs | `.claude/rules` + `paths:` для условных конвенций |
+| Узкая task decomposition | Чинить coordinator decomposition, не temperature synthesis |
+| Structured error propagation | Классифицированный error context координатору |
+| Scoped tools для synthesis | Least privilege: узкий verify tool, не все search tools |
+| Claude Code `-p` в CI | Non-interactive mode для пайплайнов |
+| Message Batches только non-blocking | Не для blocking pre-merge checks |
+| Multi-pass file review | Per-file + integration pass, не один монолитный контекст |
+
+Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; `isError` / retryable vs not; persistent case-facts при summarization.
+
+## Как вести заметки
+
+Для каждой разобранной practice-темы добавлять файл `YYYY-MM-DD-<slug>.md` и строку в таблицу ниже; обновлять счётчик «Покрыто».
+
+| Дата | Тема | Домен | Заметки |
+|------|------|-------|---------|
+| — | — | — | пока пусто |

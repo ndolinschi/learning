@@ -1,25 +1,31 @@
 # Learning
 
-Ежедневные темы обучения по четырём трекам. Прогресс, карты и материалы.
+Подготовка к **Claude Certified Architect – Foundations (CCA-F)**.  
+Два сеанса в день: **09:00** и **19:00** (Europe/Chisinau).
 
-## Треки
+## Основной трек
 
 | Трек | Папка | Фокус |
 |------|--------|--------|
-| Java Development | [`tracks/java-development`](tracks/java-development) | Java, JVM, Spring, concurrency |
-| System Design | [`tracks/system-design`](tracks/system-design) | Архитектура, масштабирование, паттерны |
-| AI Development | [`tracks/ai-development`](tracks/ai-development) | ML/LLM, пайплайны, оценка качества |
-| Agent Development | [`tracks/agent-development`](tracks/agent-development) | Агенты, tools, память, оркестрация |
+| **CCA-F Foundations** | [`tracks/cca-foundations`](tracks/cca-foundations) | Домены экзамена, карты покрытия, backlog, источники |
 
-## Как устроен день
+Карта покрытия: [`tracks/cca-foundations/coverage.md`](tracks/cca-foundations/coverage.md)  
+Журнал: [`progress/log.md`](progress/log.md)
 
-1. Выбирается новая тема (ротация треков, без повторов).
-2. Deep research (Claude) → краткий doc.
-3. NotebookLM: новый notebook + презентация (+ аудио/видео внутри notebook).
-4. В чат: PDF презентации, ссылка на notebook, doc PDF.
-5. Запись в [`progress/log.md`](progress/log.md) и в `themes/` трека.
+## Исторические треки (архив)
 
-## Прогресс
+Старые треки Java / System Design / AI / Agent сохранены для истории; **активная подготовка — только CCA-F**.
 
-- Журнал: [`progress/log.md`](progress/log.md)
-- Карта по треку: `tracks/<трек>/map.md`
+| Трек | Папка | Статус |
+|------|--------|--------|
+| Java Development | [`tracks/java-development`](tracks/java-development) | архив |
+| System Design | [`tracks/system-design`](tracks/system-design) | архив |
+| AI Development | [`tracks/ai-development`](tracks/ai-development) | архив |
+| Agent Development | [`tracks/agent-development`](tracks/agent-development) | архив |
+
+## Как устроен день (CCA-F)
+
+1. Тема из [`backlog.md`](tracks/cca-foundations/backlog.md) (вес × вероятность).
+2. Deep research → краткий notebook/doc.
+3. Отметить задачу в карте домена (`⬜` → `🟡` / `✅`) и обновить [`coverage.md`](tracks/cca-foundations/coverage.md).
+4. Запись в [`progress/log.md`](progress/log.md).
