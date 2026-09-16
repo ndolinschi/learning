@@ -26,7 +26,7 @@
 
 | # | Фокус | Task IDs |
 |---|--------|----------|
-| 1 | Agentic loop + `stop_reason` | 1.1 |
+| 1 | Agentic loop + `stop_reason` + coordinator/handoff (**done 2026-09-16 morning**) | 1.1–1.3, 1.6, 1.4🟡 |
 | 2 | Coordinator / subagent + изоляция контекста | 1.2, 1.3 |
 | 3 | Hooks vs prompt-only | 1.5, 2.x hooks |
 | 4 | CLAUDE.md + rules globs | 3.1, 3.3 |
