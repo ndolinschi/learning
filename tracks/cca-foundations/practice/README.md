@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 5** (сессия 2026-09-16 morning — agent loops / orchestration).
+**Покрыто: 10** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools).
 
 ## Оговорка
 
@@ -24,8 +24,11 @@
 | Claude Code `-p` в CI | Non-interactive mode для пайплайнов |
 | Message Batches только non-blocking | Не для blocking pre-merge checks |
 | Multi-pass file review | Per-file + integration pass, не один монолитный контекст |
+| `is_error` / retryable vs not | Structured tool_result, не silent empty success |
+| `tool_choice` force extraction | any/tool (+ strict), не prose-only JSON |
+| Project `.mcp.json` | Team-shared MCP; secrets via env expansion |
 
-Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; `isError` / retryable vs not; persistent case-facts при summarization.
+Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
 
 ## Как вести заметки
 
@@ -34,3 +37,4 @@
 | Дата | Тема | Домен | Заметки |
 |------|------|-------|---------|
 | 2026-09-16 | Agent loops, stop_reason, coordinator/subagents, handoff | D1 | [файл](2026-09-16-agent-loops.md) |
+| 2026-09-17 | MCP, tool schemas, is_error, tool_choice, .mcp.json intro | D2 | [файл](2026-09-17-mcp-tools.md) |
