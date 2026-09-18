@@ -1,8 +1,8 @@
 # CCA-F: покрытие
 
-**Общий прогресс: ~18%** (обновлено 2026-09-18 утро, Europe/Chisinau)
+**Общий прогресс: ~21%** (обновлено 2026-09-18 вечер, Europe/Chisinau)
 
-> Оценка консервативная: четыре темы (D1 + D2 + D3 intro + D4 structured) + 20 practice Q. Exam readiness по домену ниже доли строк карты.
+> Оценка консервативная: пять тем (D1–D4 + D5 context-management) + 25 practice Q. Exam readiness по домену ниже доли строк карты.
 
 ## Формула взвешенного прогресса
 
@@ -21,12 +21,22 @@ overall% = 0.27·D1% + 0.18·D2% + 0.20·D3% + 0.20·D4% + 0.15·D5%
 | [D2 Tools & MCP](domains/d2-tools-mcp/map.md) | 18% | 5 | 3 | 1 | 1 | ~70% | **~22%** | ~4.0 |
 | [D3 Claude Code](domains/d3-claude-code/map.md) | 20% | 6 | 1 | 3 | 2 | ~42% | **~20%** | ~4.0 |
 | [D4 Prompt & Structured](domains/d4-prompt-structured/map.md) | 20% | 6 | 3 | 1 | 2 | ~58% | **~20%** | ~4.0 |
-| [D5 Context & Reliability](domains/d5-context-reliability/map.md) | 15% | 6 | 0 | 0 | 6 | 0% | ~2%* | ~0.3 |
-| **Итого** | **100%** | **30** | **11** | **6** | **13** | — | — | **~18%** |
+| [D5 Context & Reliability](domains/d5-context-reliability/map.md) | 15% | 6 | 1 | 1 | 4 | ~25% | **~19%** | ~2.9 |
+| **Итого** | **100%** | **30** | **12** | **7** | **11** | — | — | **~21%** |
 
-\*D5 ~2%: только кросс-касание durable/case-facts из темы D1; отдельной темы D5 не было.
+Проверка: 0.27·22 + 0.18·22 + 0.20·20 + 0.20·20 + 0.15·19 ≈ 5.94+3.96+4.0+4.0+2.85 ≈ **20.75% ≈ 21%**.
 
-Проверка: 0.27·22 + 0.18·22 + 0.20·20 + 0.20·20 + 0.15·2 ≈ 5.94+3.96+4.0+4.0+0.3 ≈ **18.2%**.
+## Что открыл drop 2026-09-18 evening (D5)
+
+- Case-facts / durable facts block вне summarised history (CORE 5.1)
+- Lost-in-the-middle: Key Findings Summary first + headers
+- Compaction API: `compact_20260112`, trigger min 50k, custom `instructions`, pass compaction block back, `pause_after_compaction`
+- Trim / clear re-fetchable tool results (JIT)
+- Prompt caching: stable prefix first + `cache_control` ephemeral (~5 мин)
+- Provenance light (5.6): conflicting claims + attribution
+- Escalation criteria (5.2) — только related mention
+- 5 practice Q
+- **Не покрыто deep:** 5.3 error propagation, 5.4 large-codebase, 5.5 HITL calibration
 
 ## Что открыл drop 2026-09-18 morning (D4)
 
@@ -34,7 +44,7 @@ overall% = 0.27·D1% + 0.18·D2% + 0.20·D3% + 0.20·D4% + 0.15·D5%
 - Newer official: `output_config.format` (JSON outputs) + `strict: true` (strict tool use) — [VS]/production
 - Few-shot 3–5 balanced; trap = label imbalance
 - Explicit criteria vs «be conservative»
-- Schema vs semantic validation + targeted retry; programmatic &gt; prompt-only
+- Schema vs semantic validation + targeted retry; programmatic > prompt-only
 - SkillCert CLI `--json-schema` «100%» — overstated, не центр
 - 5 practice Q (Structured Data Extraction style)
 - **Не покрыто:** Message Batches (4.5), multi-pass/independent review (4.6)
@@ -59,7 +69,7 @@ overall% = 0.27·D1% + 0.18·D2% + 0.20·D3% + 0.20·D4% + 0.15·D5%
 - D2: built-in Claude Code tools (2.5); MCP auth/resources deep
 - D3: CI/CD `-p` (3.6); iterative refinement (3.5); permissions layers
 - D4: Batches (4.5), multi-pass (4.6); hands-on extraction pipeline
-- D5 почти полностью
+- D5: 5.2 escalation deep; 5.3–5.5; hands-on compaction loop
 - Hands-on Messages API tool-loop / Claude Code repo workflow
 
-Practice notes: [`practice/README.md`](practice/README.md) — покрыто **20** (четыре сессии).
+Practice notes: [`practice/README.md`](practice/README.md) — покрыто **25** (пять сессий).

@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 20** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output).
+**Покрыто: 25** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management).
 
 ## Оговорка
 
@@ -35,6 +35,11 @@
 | CLAUDE.md hierarchy / concat | Project file в git; files concatenate, specific later |
 | Skills vs monolithic CLAUDE.md | Процедуры → Skills (JIT) |
 | Only personal CLAUDE.md | Дистрактор — нужен project file для команды |
+| Persistent case-facts | Durable block вне summarised history |
+| Lost-in-the-middle structure | Key Findings first + headers |
+| Compaction preserve instructions | min 50k trigger; pass compaction block; lossy |
+| Prompt caching layout | Stable prefix first + ephemeral; volatile last |
+| Provenance multi-source | Conflicting claims + attribution; trim tools |
 
 Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
 
@@ -48,3 +53,4 @@
 | 2026-09-17 | MCP, tool schemas, is_error, tool_choice, .mcp.json intro | D2 | [файл](2026-09-17-mcp-tools.md) |
 | 2026-09-17 вечер | CLAUDE.md hierarchy, rules globs, Skills, Plan Mode | D3 | [файл](2026-09-17-evening-claude-md.md) |
 | 2026-09-18 утро | Structured output: JSON Schema, tool_choice, few-shot, validation/retry | D4 | [файл](2026-09-18-morning.md) |
+| 2026-09-18 вечер | Context management: case-facts, LITM, compaction, caching | D5 | [файл](2026-09-18-evening-context.md) |
