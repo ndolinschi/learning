@@ -11,7 +11,7 @@
 
 ## P1 — высокий
 
-4. **D4 (20%, high)** — system prompts; structured output через tools; schema vs prose; forced `tool_choice`; few-shot; validation/retry; организация промпта; evaluation.
+4. **D4 (20%, high)** — system prompts; structured output через tools; schema vs prose; forced `tool_choice`; few-shot; validation/retry; организация промпта; evaluation. **Ядро 4.2–4.4 + 4.1 light — done 2026-09-18 morning (~58% карты, exam-ready ~20%); Batches (4.5) и multi-pass (4.6) — ещё нет. Также: newer `output_config`/`strict` awareness.**
 5. **D5 (15%, high)** — context window / lost-in-the-middle; durable facts / case-facts; summarization/compaction; prompt caching (уровень «когда использовать»); Batch API; crash recovery; telemetry/evaluation.
 
 ## P2 — сквозное суждение
@@ -29,7 +29,8 @@
 | 1 | Agentic loop + `stop_reason` + coordinator/handoff (**done 2026-09-16 morning**) | 1.1–1.3, 1.6, 1.4🟡 |
 | 2 | Tool schemas + `tool_choice` + isError + `.mcp.json` intro (**done 2026-09-17 morning**) | 2.1–2.3 ✅, 2.4🟡 |
 | 3 | CLAUDE.md + rules globs + Skills + Plan Mode light (**done 2026-09-17 evening**) | 3.1 ✅, 3.2🟡, 3.3🟡, 3.4🟡 |
-| 4 | Hooks vs prompt-only | 1.5, 2.x hooks |
-| 5 | Built-in Claude Code tools / MCP deep | 2.5, 2.4 remainder |
-| 6 | Case-facts / durable state | 5.1 |
-| 7 | CI/CD `-p` / structured review | 3.6 |
+| 4 | Structured output: schema + forced tool_choice + few-shot + validation (**done 2026-09-18 morning**) | 4.1🟡, 4.2–4.4 ✅ |
+| 5 | Hooks vs prompt-only | 1.5, 2.x hooks |
+| 6 | Built-in Claude Code tools / MCP deep | 2.5, 2.4 remainder |
+| 7 | Case-facts / durable state | 5.1 |
+| 8 | CI/CD `-p` / structured review · Batches · multi-pass | 3.6, 4.5, 4.6 |

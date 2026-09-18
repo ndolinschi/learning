@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 15** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md).
+**Покрыто: 20** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output).
 
 ## Оговорка
 
@@ -23,6 +23,11 @@
 | Scoped tools для synthesis | Least privilege: узкий verify tool, не все search tools |
 | Claude Code `-p` в CI | Non-interactive mode для пайплайнов |
 | Message Batches только non-blocking | Не для blocking pre-merge checks |
+| Forced tool_choice + input_schema extraction | Schema + forced tool + escapes + semantic retry |
+| Few-shot label imbalance | 3–5 balanced examples; не majority-class dump |
+| Schema vs semantic validation | Targeted repair, не blind retry |
+| Native structured outputs | output_config.format / strict:true + semantic |
+| Explicit criteria vs conservative | Measurable rules, не vague confidence |
 | Multi-pass file review | Per-file + integration pass, не один монолитный контекст |
 | `is_error` / retryable vs not | Structured tool_result, не silent empty success |
 | `tool_choice` force extraction | any/tool (+ strict), не prose-only JSON |
@@ -42,3 +47,4 @@
 | 2026-09-16 | Agent loops, stop_reason, coordinator/subagents, handoff | D1 | [файл](2026-09-16-agent-loops.md) |
 | 2026-09-17 | MCP, tool schemas, is_error, tool_choice, .mcp.json intro | D2 | [файл](2026-09-17-mcp-tools.md) |
 | 2026-09-17 вечер | CLAUDE.md hierarchy, rules globs, Skills, Plan Mode | D3 | [файл](2026-09-17-evening-claude-md.md) |
+| 2026-09-18 утро | Structured output: JSON Schema, tool_choice, few-shot, validation/retry | D4 | [файл](2026-09-18-morning.md) |

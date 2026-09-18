@@ -7,6 +7,7 @@
 
 | Дата | Трек | Тема | Презентация | Notebook | Doc |
 |------|------|------|-------------|----------|-----|
+| 2026-09-18 утро | CCA-F Foundations | D4: Структурированный вывод (JSON Schema, tool_choice, few-shot, validation/retry) · overall ~14%→~18% | PDF отдельно (NotebookLM pending) | (NotebookLM pending) | PDF + [`тема`](../tracks/cca-foundations/domains/d4-prompt-structured/topics/structured-output.md) |
 | 2026-09-17 вечер | CCA-F Foundations | D3: CLAUDE.md иерархия, rules/globs, slash-команды и Plan Mode · overall ~10%→~14% | PDF отдельно (NotebookLM) | [ссылка](https://notebook.google.com/notebook/24dc1308-686f-4adc-af94-ce7eae420364) | PDF + [`тема`](../tracks/cca-foundations/domains/d3-claude-code/topics/claude-md-hierarchy.md) |
 | 2026-09-17 утро | CCA-F Foundations | D2: MCP и дизайн инструментов (схемы, границы, isError, tool_choice) · overall ~6%→~10% | PDF отдельно (NotebookLM) | [ссылка](https://notebook.google.com/notebook/80b035ac-837b-425f-92b6-3a2a490b8324) | PDF + [`тема`](../tracks/cca-foundations/domains/d2-tools-mcp/themes/2026-09-17-mcp-tool-design.md) |
 | 2026-09-14 | Java Development | Virtual Threads в Java 21+: модель, pinning, когда использовать | PDF в чате Learning Bot | [ссылка](https://notebook.google.com/notebook/4048c827-99c4-4a38-9939-2f825bfc4bf4) | PDF в чате |
