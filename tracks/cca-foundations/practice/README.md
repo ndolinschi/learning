@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 25** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management).
+**Покрыто: 30** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks).
 
 ## Оговорка
 
@@ -40,6 +40,11 @@
 | Compaction preserve instructions | min 50k trigger; pass compaction block; lossy |
 | Prompt caching layout | Stable prefix first + ephemeral; volatile last |
 | Provenance multi-source | Conflicting claims + attribution; trim tools |
+| PreToolUse refund/policy gate | Deterministic deny + reason, не prompt-only |
+| Empty `{}` PreToolUse | No decision / normal permission flow |
+| `updatedInput` sandbox rewrite | Normalize args under hookSpecificOutput |
+| Hooks inside subagent | Same PreToolUse; agent_id/agent_type |
+| Handoff after policy deny | HITL + case-facts (1.4), не blind retry |
 
 Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
 
@@ -54,3 +59,4 @@
 | 2026-09-17 вечер | CLAUDE.md hierarchy, rules globs, Skills, Plan Mode | D3 | [файл](2026-09-17-evening-claude-md.md) |
 | 2026-09-18 утро | Structured output: JSON Schema, tool_choice, few-shot, validation/retry | D4 | [файл](2026-09-18-morning.md) |
 | 2026-09-18 вечер | Context management: case-facts, LITM, compaction, caching | D5 | [файл](2026-09-18-evening-context.md) |
+| 2026-09-19 утро | Agent SDK hooks: Pre/PostToolUse, enforcement vs prompt-only | D1 | [файл](2026-09-19-morning-hooks.md) |
