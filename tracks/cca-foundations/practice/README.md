@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 30** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks).
+**Покрыто: 35** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep).
 
 ## Оговорка
 
@@ -45,6 +45,11 @@
 | `updatedInput` sandbox rewrite | Normalize args under hookSpecificOutput |
 | Hooks inside subagent | Same PreToolUse; agent_id/agent_type |
 | Handoff after policy deny | HITL + case-facts (1.4), не blind retry |
+| Built-in composition Glob→Read→Edit | Не Bash-sed для правок файлов |
+| Review-subagent tool allowlist | Read/Grep/Glob/Bash без Write/Edit |
+| MCP resource vs tool | `@` context vs side-effecting action |
+| `mcp__server__tool` naming | Канон permissions/hooks/allowlist |
+| Secrets via `${VAR}` / OAuth | Не CLAUDE.md; не plaintext в git |
 
 Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
 
@@ -60,3 +65,4 @@
 | 2026-09-18 утро | Structured output: JSON Schema, tool_choice, few-shot, validation/retry | D4 | [файл](2026-09-18-morning.md) |
 | 2026-09-18 вечер | Context management: case-facts, LITM, compaction, caching | D5 | [файл](2026-09-18-evening-context.md) |
 | 2026-09-19 утро | Agent SDK hooks: Pre/PostToolUse, enforcement vs prompt-only | D1 | [файл](2026-09-19-morning-hooks.md) |
+| 2026-09-19 вечер | Built-in Claude Code tools + MCP resources/prompts/auth | D2 | [файл](2026-09-19-evening-builtin-mcp.md) |
