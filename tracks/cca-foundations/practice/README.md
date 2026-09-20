@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 35** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep).
+**Покрыто: 40** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork).
 
 ## Оговорка
 
@@ -53,6 +53,12 @@
 
 Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
 
+| Continue vs resume vs fork | continue=latest cwd; resume=ID; fork=copy+new ID |
+| Fork ≠ filesystem sandbox | Conversation branch only; file edits real → checkpointing |
+| Recovery after max_turns | Capture session_id from error ResultMessage → resume higher limit |
+| Multi-tenant sessions | Per-entity session_id + resume, never shared continue |
+| Cross-host session | SessionStore / copy jsonl / case-facts into fresh session |
+
 ## Как вести заметки
 
 Для каждой разобранной practice-темы добавлять файл `YYYY-MM-DD-<slug>.md` и строку в таблицу ниже; обновлять счётчик «Покрыто».
@@ -66,3 +72,4 @@
 | 2026-09-18 вечер | Context management: case-facts, LITM, compaction, caching | D5 | [файл](2026-09-18-evening-context.md) |
 | 2026-09-19 утро | Agent SDK hooks: Pre/PostToolUse, enforcement vs prompt-only | D1 | [файл](2026-09-19-morning-hooks.md) |
 | 2026-09-19 вечер | Built-in Claude Code tools + MCP resources/prompts/auth | D2 | [файл](2026-09-19-evening-builtin-mcp.md) |
+| 2026-09-20 утро | Session resume/fork: continue, resume, fork_session, CLI --fork-session /branch | D1 | [файл](2026-09-20-morning-session.md) |

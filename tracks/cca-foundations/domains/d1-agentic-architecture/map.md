@@ -10,9 +10,9 @@
 | 1.4 Implement multi-step workflows with enforcement and handoff patterns | ✅ | 2026-09-19 | [notebook](https://notebook.google.com/notebook/60e1ccc2-f487-4a7c-bfa7-3b9e94bb6252) | handoff после policy deny + HITL case-facts; [hooks](topics/agent-hooks.md) |
 | 1.5 Apply Agent SDK hooks for tool call interception and data normalization (Pre/PostToolUse) | ✅ | 2026-09-19 | [notebook](https://notebook.google.com/notebook/60e1ccc2-f487-4a7c-bfa7-3b9e94bb6252) | [тема](topics/agent-hooks.md) |
 | 1.6 Design task decomposition strategies for complex workflows | ✅ | 2026-09-16 | | [тема](themes/2026-09-16-agent-loops-orchestration.md) |
-| 1.7 Manage session state, resumption, and forking (`--resume`, `fork_session`) | ⬜ | | | related mention в hooks drop (SessionStart); deep drill нужен |
+| 1.7 Manage session state, resumption, and forking (`--resume`, `fork_session`) | ✅ | 2026-09-20 | [notebook](https://notebook.google.com/notebook/6dbfad7c-6947-455b-84a5-5d509e3581b5) | [тема](topics/session-resume-fork.md) |
 
-**Покрытие домена: 6/7 (~86%)** — консервативно для exam readiness по D1 считаем **~30%** (hooks + enforcement/handoff deep; без 1.7 session SDK и без большого банка drills). См. `coverage.md`.
+**Покрытие домена: 7/7 (~100%)** — консервативно для exam readiness по D1 считаем **~36%** (карта закрыта; без большого банка drills / hands-on Messages API). См. `coverage.md`.
 
 ## Ключевые сценарии / темы
 
@@ -21,3 +21,4 @@
 - Явная передача фактов subagent (пустой контекст по умолчанию)  
 - Детерминированные hooks vs prompt-only policy  
 - Bounded retries / timeouts / structured error returns (не `[]` как success)
+- Session continue / resume / fork; recovery после max_turns; multi-user session_id
