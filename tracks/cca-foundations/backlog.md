@@ -6,7 +6,7 @@
 ## P0 — максимальный рычаг
 
 1. **D1 (27%, very high)** — agent vs workflow; циклы и `stop_reason`; coordinator/subagent; явная передача состояния; persistence; escalation; timeouts; bounded retries; human-in-the-loop. **Done карта D1 7/7:** loops 2026-09-16; hooks 1.5 + handoff 1.4 — 2026-09-19 morning; **1.7 session resume/fork — 2026-09-20 morning.**
-2. **D3 (20%, very high)** — иерархия CLAUDE.md; Plan Mode; Skills; `.claude/rules` globs; targeting контекста; permissions; scoped subagents; границы CI/CD review. **CLAUDE.md + rules + Skills + Plan Mode light — done 2026-09-17 evening; CI/CD `-p` (3.6) и iterative refinement (3.5) — ещё нет.**
+2. **D3 (20%, very high)** — иерархия CLAUDE.md; Plan Mode; Skills; `.claude/rules` globs; targeting контекста; permissions; scoped subagents; границы CI/CD review. **CLAUDE.md + rules + Skills + Plan Mode light — done 2026-09-17 evening; CI/CD `-p` (3.6) и iterative refinement (3.5) — done 2026-09-20 evening (карта D3 4.5/6 ~75%, exam-ready ~28%).** Углубить 3.2–3.4 при необходимости.
 3. **D2 (18%, very high по плотности сценариев)** — описания/схемы tools; MCP servers/resources/prompts; custom vs built-in vs MCP vs Skills; Pre/PostToolUse hooks; изоляция ошибок. **Ядро schemas/isError/tool_choice/.mcp.json intro — done 2026-09-17 morning; hooks overlap via D1 2026-09-19; built-in 2.5 + MCP resources/prompts/auth 2.4 — done 2026-09-19 evening (карта D2 5/5).**
 
 ## P1 — высокий
@@ -34,4 +34,5 @@
 | 6 | Hooks vs prompt-only (**done 2026-09-19 morning**) | 1.5 ✅, 1.4 ✅ |
 | 7 | Built-in Claude Code tools / MCP deep (**done 2026-09-19 evening**) | 2.5 ✅, 2.4 ✅ |
 | 8 | Session resume/fork (**done 2026-09-20 morning**) | 1.7 ✅ |
-| 9 | Escalation deep · 5.3–5.5 · CI/CD `-p` · Batches · multi-pass | 5.2–5.5, 3.6, 4.5, 4.6 |
+| 9 | CI/CD `-p` + iterative refinement (**done 2026-09-20 evening**) | 3.5 ✅, 3.6 ✅ |
+| 10 | Escalation deep · 5.3–5.5 · Batches · multi-pass | 5.2–5.5, 4.5, 4.6 |
