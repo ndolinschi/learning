@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 40** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork).
+**Покрыто: 45** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; **2026-09-20 evening — CI/CD -p + iterative refinement**).
 
 ## Оговорка
 
@@ -50,14 +50,16 @@
 | MCP resource vs tool | `@` context vs side-effecting action |
 | `mcp__server__tool` naming | Канон permissions/hooks/allowlist |
 | Secrets via `${VAR}` / OAuth | Не CLAUDE.md; не plaintext в git |
-
-Дополнительно (certified-architect.com samples, original for post): изоляция контекста subagent; persistent case-facts при summarization.
-
 | Continue vs resume vs fork | continue=latest cwd; resume=ID; fork=copy+new ID |
 | Fork ≠ filesystem sandbox | Conversation branch only; file edits real → checkpointing |
 | Recovery after max_turns | Capture session_id from error ResultMessage → resume higher limit |
 | Multi-tenant sessions | Per-entity session_id + resume, never shared continue |
 | Cross-host session | SessionStore / copy jsonl / case-facts into fresh session |
+| CI typo-bot via `-p` | `git diff \| claude -p` / Action+prompt; не personal-only CLAUDE.md |
+| Structured CI gate | `--output-format json --json-schema` → structured_output |
+| Iterative multi-file | Plan Mode → small diffs → verify → adversarial subagent |
+| Unattended night job | acceptEdits/auto + permission-prompts none + max-turns + Secrets |
+| Monolithic PR review | Анти-паттерн; scoped/multi-pass вместо одного огромного контекста |
 
 ## Как вести заметки
 
@@ -73,3 +75,4 @@
 | 2026-09-19 утро | Agent SDK hooks: Pre/PostToolUse, enforcement vs prompt-only | D1 | [файл](2026-09-19-morning-hooks.md) |
 | 2026-09-19 вечер | Built-in Claude Code tools + MCP resources/prompts/auth | D2 | [файл](2026-09-19-evening-builtin-mcp.md) |
 | 2026-09-20 утро | Session resume/fork: continue, resume, fork_session, CLI --fork-session /branch | D1 | [файл](2026-09-20-morning-session.md) |
+| 2026-09-20 вечер | CI/CD `-p` + structured output + iterative refinement | D3 | [файл](2026-09-20-evening-cicd-iterative.md) |
