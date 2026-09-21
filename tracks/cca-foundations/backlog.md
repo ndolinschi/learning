@@ -12,7 +12,7 @@
 ## P1 — высокий
 
 4. **D4 (20%, high)** — system prompts; structured output через tools; schema vs prose; forced `tool_choice`; few-shot; validation/retry; организация промпта; evaluation. **Ядро 4.2–4.4 + 4.1 light — done 2026-09-18 morning; Message Batches (4.5) + multi-pass (4.6) — done 2026-09-21 morning (карта D4 5.5/6 ~92%, exam-ready ~28%).** Остаётся: углубить 4.1 explicit criteria; `output_config`/`strict` drills; hands-on extraction+batch.
-5. **D5 (15%, high)** — context window / lost-in-the-middle; durable facts / case-facts; summarization/compaction; prompt caching (уровень «когда использовать»); Batch API; crash recovery; telemetry/evaluation. **Case-facts + LITM + compaction + caching + provenance light — done 2026-09-18 evening (5.1 ✅, 5.6 🟡; exam-ready ~19%, карта ~25%). Deep 5.2–5.5 — ещё нет.**
+5. **D5 (15%, high)** — context window / lost-in-the-middle; durable facts / case-facts; summarization/compaction; prompt caching; crash recovery; telemetry/evaluation; escalation/HITL; error propagation. **5.1 case-facts/compaction — done 2026-09-18 evening; 5.2+5.3+5.5+5.6 — done 2026-09-21 evening (карта D5 5/6 ~83%, exam-ready ~30%).** Остаётся: **5.4** large codebase exploration ⬜; hands-on compaction/HITL webhook.
 
 ## P2 — сквозное суждение
 
@@ -36,4 +36,5 @@
 | 8 | Session resume/fork (**done 2026-09-20 morning**) | 1.7 ✅ |
 | 9 | CI/CD `-p` + iterative refinement (**done 2026-09-20 evening**) | 3.5 ✅, 3.6 ✅ |
 | 10 | Message Batches + multi-pass (**done 2026-09-21 morning**) | 4.5 ✅, 4.6 ✅ |
-| 11 | Escalation deep · D5 5.2–5.5 · D4 4.1 deepen | 5.2–5.5, 4.1 |
+| 11 | Escalation / HITL / error propagation / confidence (**done 2026-09-21 evening**) | 5.2 ✅, 5.3 ✅, 5.5 ✅, 5.6 ✅ |
+| 12 | D5 5.4 large codebase · D4 4.1 deepen · hands-on | 5.4, 4.1 |
