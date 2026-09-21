@@ -5,24 +5,24 @@
 | Тема/Task | Статус | Дата | Notebook | Заметки |
 |-----------|--------|------|----------|---------|
 | 5.1 Manage conversation context to preserve critical information across long interactions | ✅ | 2026-09-18 вечер | https://notebook.google.com/notebook/91477c4b-dd4c-40b5-8a99-0e63dae0a660 | CORE: case-facts, LITM, compaction, trim/clear tools, caching when-to-use |
-| 5.2 Design effective escalation and ambiguity resolution patterns | ⬜ | | | related mention only (explicit criteria); deep later |
-| 5.3 Implement error propagation strategies across multi-agent systems | ⬜ | | | out of scope this drop |
-| 5.4 Manage context effectively in large codebase exploration | ⬜ | | | out of scope this drop |
-| 5.5 Design human review workflows and confidence calibration | ⬜ | | | out of scope this drop |
-| 5.6 Preserve information provenance and handle uncertainty in multi-source synthesis | 🟡 | 2026-09-18 вечер | https://notebook.google.com/notebook/91477c4b-dd4c-40b5-8a99-0e63dae0a660 | light: conflicting claims + attribution |
+| 5.2 Design effective escalation and ambiguity resolution patterns | ✅ | 2026-09-21 вечер | https://notebook.google.com/notebook/6d64abc4-6a01-46f2-83c5-6ffaa924fc76 | явные критерии; sentiment orthogonal; clarify/escalate/documented assumption |
+| 5.3 Implement error propagation strategies across multi-agent systems | ✅ | 2026-09-21 вечер | https://notebook.google.com/notebook/6d64abc4-6a01-46f2-83c5-6ffaa924fc76 | structured timeout/error + is_error; never silent [] |
+| 5.4 Manage context effectively in large codebase exploration | ⬜ | | | out of scope this drop (cross-link only) |
+| 5.5 Design human review workflows and confidence calibration | ✅ | 2026-09-21 вечер | https://notebook.google.com/notebook/6d64abc4-6a01-46f2-83c5-6ffaa924fc76 | HITL tiers; structured packet; confidence ≠ policy gate |
+| 5.6 Preserve information provenance and handle uncertainty in multi-source synthesis | ✅ | 2026-09-21 вечер | https://notebook.google.com/notebook/6d64abc4-6a01-46f2-83c5-6ffaa924fc76 | deepen: preserve contradictions + attribution + claim-source |
 
-**Покрытие домена: ~1.5/6 строк (~25% карты) · exam-ready ~19%**
+**Покрытие домена: ~5/6 строк (~83% карты) · exam-ready ~30%**
 
 ## Ключевые сценарии / темы
 
 - Case-facts / durable facts block (не «просто больший context window»)  
-- Lost-in-the-middle; pin ключевых фактов; trimming / clearing tool results  
-- Compaction API (`compact_20260112`, min 50k, custom instructions, pass block back)  
-- Prompt caching: stable prefix + ephemeral (~5 мин)  
-- Escalation: явные критерии + few-shot (related; deep 5.2 later)  
-- Provenance light: conflicting claims с attribution  
-- 5.3–5.5 — ещё не drill  
+- Escalation: явные критерии + few-shot; ambiguity triad  
+- Error propagation: classified is_error / structured timeout to coordinator  
+- HITL: AUTO/NOTIFY/APPROVE/BLOCK; structured handoff; audit trail  
+- Confidence calibration: deterministic gates > self-confidence  
+- Provenance: conflicting claims with attribution  
+- 5.4 large codebase — ещё не drill  
 
 ## Тема вечера
 
-[`topics/context-management.md`](topics/context-management.md)
+[`topics/escalation-hitl.md`](topics/escalation-hitl.md)
