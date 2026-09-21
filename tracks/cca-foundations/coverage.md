@@ -1,8 +1,8 @@
 # CCA-F: покрытие
 
-**Общий прогресс: ~29%** (обновлено 2026-09-21 утро, Europe/Chisinau)
+**Общий прогресс: ~31%** (обновлено 2026-09-21 вечер, Europe/Chisinau)
 
-> Оценка консервативная: десять тем + 50 practice Q. Exam readiness по домену ниже доли строк карты.
+> Оценка консервативная: одиннадцать тем + 55 practice Q. Exam readiness по домену ниже доли строк карты.
 
 ## Формула взвешенного прогресса
 
@@ -21,10 +21,21 @@ overall% = 0.27·D1% + 0.18·D2% + 0.20·D3% + 0.20·D4% + 0.15·D5%
 | [D2 Tools & MCP](domains/d2-tools-mcp/map.md) | 18% | 5 | 5 | 0 | 0 | **~100%** | **~29%** | ~5.2 |
 | [D3 Claude Code](domains/d3-claude-code/map.md) | 20% | 6 | 3 | 3 | 0 | **~75%** | **~28%** | ~5.6 |
 | [D4 Prompt & Structured](domains/d4-prompt-structured/map.md) | 20% | 6 | 5 | 1 | 0 | **~92%** | **~28%** | ~5.6 |
-| [D5 Context & Reliability](domains/d5-context-reliability/map.md) | 15% | 6 | 1 | 1 | 4 | ~25% | **~19%** | ~2.9 |
-| **Итого** | **100%** | **30** | **21** | **5** | **4** | — | — | **~29%** |
+| [D5 Context & Reliability](domains/d5-context-reliability/map.md) | 15% | 6 | 5 | 0 | 1 | **~83%** | **~30%** | ~4.5 |
+| **Итого** | **100%** | **30** | **25** | **4** | **1** | — | — | **~31%** |
 
-Проверка: 0.27·36 + 0.18·29 + 0.20·28 + 0.20·28 + 0.15·19 ≈ 9.72+5.22+5.6+5.6+2.85 ≈ **28.99% ≈ 29%**.
+Проверка: 0.27·36 + 0.18·29 + 0.20·28 + 0.20·28 + 0.15·30 ≈ 9.72+5.22+5.6+5.6+4.5 ≈ **30.64% ≈ 31%**.
+
+## Что открыл drop 2026-09-21 evening (D5 эскалация / HITL)
+
+- Эскалация: явные измеримые критерии + few-shot; sentiment ортогонален политике
+- Ambiguity triad: clarify / escalate / documented assumption (не silent guess на write-path)
+- Structured HITL packet (не dump транскрипта); уровни AUTO/NOTIFY/APPROVE/BLOCK
+- Multi-agent error propagation: `is_error` + structured timeout (никогда silent `[]`)
+- Калибровка: self-confidence = route-сигнал, hard gates = hooks/validation
+- Provenance 5.6: сохранять конфликтующие claim с attribution → ✅
+- 5 practice Q (итого ~55)
+- **Карта D5:** 5.2+5.3+5.5 ✅, 5.6 🟡→✅, 5.4 ⬜ → 5/6 (~83%); exam-ready ~19%→~30%; overall ~29%→~31%
 
 ## Что открыл drop 2026-09-21 morning (D4 Message Batches + multi-pass)
 
@@ -79,7 +90,7 @@ overall% = 0.27·D1% + 0.18·D2% + 0.20·D3% + 0.20·D4% + 0.15·D5%
 - D2: карта закрыта; hands-on MCP server + live Claude Code workflow
 - D3: карта 4.5/6; углубить 3.2–3.4 (Skills deep / rules monorepo / Plan Mode scenarios); permissions layers hands-on
 - D4: карта 5.5/6 (4.1 🟡 explicit criteria); hands-on extraction+batch pipeline; `output_config`/`strict` drills
-- D5: 5.2 escalation deep; 5.3–5.5; hands-on compaction loop
+- D5: 5.4 large codebase exploration ⬜; hands-on compaction loop / live HITL webhook drill
 - Hands-on Messages API tool-loop / Claude Code repo workflow
 
-Practice notes: [`practice/README.md`](practice/README.md) — покрыто **50** (десять сессий).
+Practice notes: [`practice/README.md`](practice/README.md) — покрыто **55** (одиннадцать сессий).
