@@ -7,6 +7,7 @@
 
 | Дата | Трек | Тема | Презентация | Notebook | Doc |
 |------|------|------|-------------|----------|-----|
+| 2026-09-21 утро | CCA-F Foundations | D4: Message Batches и multi-pass — пакетная обработка и независимое ревью · overall ~27%→~29% | PDF отдельно (NotebookLM) | [ссылка](https://notebook.google.com/notebook/a8ad563f-2ebd-4832-8119-991f81bbc998) | PDF + [`тема`](../tracks/cca-foundations/domains/d4-prompt-structured/topics/batches-multipass.md) |
 | 2026-09-20 вечер | CCA-F Foundations | D3: Claude Code CI/CD — print mode `-p`, structured output и iterative refinement · overall ~26%→~27% | PDF отдельно (NotebookLM) | [ссылка](https://notebook.google.com/notebook/b3bb66a0-3daf-4671-bcde-2d02ecd17b0a) | PDF + [`тема`](../tracks/cca-foundations/domains/d3-claude-code/topics/cicd-print-iterative.md) |
 | 2026-09-20 утро | CCA-F Foundations | D1: Сессии Agent SDK — resume / continue / fork (`fork_session`, `--fork-session`, `/branch`) · overall ~24%→~26% | PDF отдельно (NotebookLM) | [ссылка](https://notebook.google.com/notebook/6dbfad7c-6947-455b-84a5-5d509e3581b5) | PDF + [`тема`](../tracks/cca-foundations/domains/d1-agentic-architecture/topics/session-resume-fork.md) |
 | 2026-09-19 вечер | CCA-F Foundations | D2: Встроенные tools + MCP deep (Read/Edit/Bash/Grep/Glob, resources/prompts, auth) · overall ~23%→~24% | PDF отдельно (NotebookLM pending) | (NotebookLM — другой агент) | PDF + [`тема`](../tracks/cca-foundations/domains/d2-tools-mcp/topics/builtin-mcp-deep.md) |
