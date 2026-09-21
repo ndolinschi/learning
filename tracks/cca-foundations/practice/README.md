@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 50** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; 2026-09-20 evening — CI/CD -p + iterative refinement; **2026-09-21 morning — Message Batches + multi-pass**).
+**Покрыто: 55** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; 2026-09-20 evening — CI/CD -p + iterative refinement; **2026-09-21 morning — Message Batches + multi-pass**; **2026-09-21 evening — escalation/HITL**).
 
 ## Оговорка
 
@@ -12,6 +12,11 @@
 
 | Тема | Ключевой правильный рычаг (pattern) |
 |------|-------------------------------------|
+| Escalation criteria vs sentiment | Явные критерии + few-shot; sentiment orthogonal |
+| Structured error / never silent [] | is_error + timeout context координатору |
+| HITL structured packet | case-facts + reason + recommended_action |
+| Confidence ≠ hard policy | Hooks/validation; confidence = route |
+| Provenance contradictions | Preserve both claims + attribution |
 | Programmatic prerequisites vs prompts | Детерминированный gate/hook, не «усилить system prompt» |
 | Качество tool description | Описания как primary selector; границы и примеры |
 | Escalation calibration + few-shot | Явные критерии + примеры, не confidence/sentiment proxy |
