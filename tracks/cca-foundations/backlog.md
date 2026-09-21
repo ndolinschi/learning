@@ -11,7 +11,7 @@
 
 ## P1 — высокий
 
-4. **D4 (20%, high)** — system prompts; structured output через tools; schema vs prose; forced `tool_choice`; few-shot; validation/retry; организация промпта; evaluation. **Ядро 4.2–4.4 + 4.1 light — done 2026-09-18 morning (~58% карты, exam-ready ~20%); Batches (4.5) и multi-pass (4.6) — ещё нет. Также: newer `output_config`/`strict` awareness.**
+4. **D4 (20%, high)** — system prompts; structured output через tools; schema vs prose; forced `tool_choice`; few-shot; validation/retry; организация промпта; evaluation. **Ядро 4.2–4.4 + 4.1 light — done 2026-09-18 morning; Message Batches (4.5) + multi-pass (4.6) — done 2026-09-21 morning (карта D4 5.5/6 ~92%, exam-ready ~28%).** Остаётся: углубить 4.1 explicit criteria; `output_config`/`strict` drills; hands-on extraction+batch.
 5. **D5 (15%, high)** — context window / lost-in-the-middle; durable facts / case-facts; summarization/compaction; prompt caching (уровень «когда использовать»); Batch API; crash recovery; telemetry/evaluation. **Case-facts + LITM + compaction + caching + provenance light — done 2026-09-18 evening (5.1 ✅, 5.6 🟡; exam-ready ~19%, карта ~25%). Deep 5.2–5.5 — ещё нет.**
 
 ## P2 — сквозное суждение
@@ -35,4 +35,5 @@
 | 7 | Built-in Claude Code tools / MCP deep (**done 2026-09-19 evening**) | 2.5 ✅, 2.4 ✅ |
 | 8 | Session resume/fork (**done 2026-09-20 morning**) | 1.7 ✅ |
 | 9 | CI/CD `-p` + iterative refinement (**done 2026-09-20 evening**) | 3.5 ✅, 3.6 ✅ |
-| 10 | Escalation deep · 5.3–5.5 · Batches · multi-pass | 5.2–5.5, 4.5, 4.6 |
+| 10 | Message Batches + multi-pass (**done 2026-09-21 morning**) | 4.5 ✅, 4.6 ✅ |
+| 11 | Escalation deep · D5 5.2–5.5 · D4 4.1 deepen | 5.2–5.5, 4.1 |
