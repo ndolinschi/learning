@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 45** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; **2026-09-20 evening — CI/CD -p + iterative refinement**).
+**Покрыто: 50** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; 2026-09-20 evening — CI/CD -p + iterative refinement; **2026-09-21 morning — Message Batches + multi-pass**).
 
 ## Оговорка
 
@@ -60,6 +60,10 @@
 | Iterative multi-file | Plan Mode → small diffs → verify → adversarial subagent |
 | Unattended night job | acceptEdits/auto + permission-prompts none + max-turns + Secrets |
 | Monolithic PR review | Анти-паттерн; scoped/multi-pass вместо одного огромного контекста |
+| Message Batches reconcile `custom_id` | Порядок JSONL ≠ порядок requests |
+| Independent review ≠ self-critique | Отдельный call/agent + rubric |
+| Batches cost framing | ~50% standard; no pricing math |
+| 24h batch window / 29d results | Exam recall limits |
 
 ## Как вести заметки
 
@@ -76,3 +80,4 @@
 | 2026-09-19 вечер | Built-in Claude Code tools + MCP resources/prompts/auth | D2 | [файл](2026-09-19-evening-builtin-mcp.md) |
 | 2026-09-20 утро | Session resume/fork: continue, resume, fork_session, CLI --fork-session /branch | D1 | [файл](2026-09-20-morning-session.md) |
 | 2026-09-20 вечер | CI/CD `-p` + structured output + iterative refinement | D3 | [файл](2026-09-20-evening-cicd-iterative.md) |
+| 2026-09-21 утро | Message Batches + multi-pass independent review | D4 | [файл](2026-09-21-morning-batches-multipass.md) |
