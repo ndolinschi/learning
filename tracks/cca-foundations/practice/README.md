@@ -2,7 +2,7 @@
 
 Место для заметок по practice-вопросам и разборам сценариев.
 
-**Покрыто: 55** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; 2026-09-20 evening — CI/CD -p + iterative refinement; **2026-09-21 morning — Message Batches + multi-pass**; **2026-09-21 evening — escalation/HITL**).
+**Покрыто: 60** (сессии 2026-09-16 morning — agent loops; 2026-09-17 morning — MCP/tools; 2026-09-17 evening — CLAUDE.md; 2026-09-18 morning — structured output; 2026-09-18 evening — context management; 2026-09-19 morning — Agent SDK hooks; 2026-09-19 evening — built-in tools + MCP deep; 2026-09-20 morning — session resume/fork; 2026-09-20 evening — CI/CD -p + iterative refinement; 2026-09-21 morning — Message Batches + multi-pass; 2026-09-21 evening — escalation/HITL; **2026-09-22 morning — large codebase context 5.4**).
 
 ## Оговорка
 
@@ -12,6 +12,11 @@
 
 | Тема | Ключевой правильный рычаг (pattern) |
 |------|-------------------------------------|
+| Explore-first large repo | Plan Mode + scoped explorer; не paste tree |
+| Subagent structured findings | Summary schema, не raw Grep dump / не inherit history |
+| Layered CLAUDE.md / rules / Skills | Lean root; path-scoped; on-demand Skills |
+| Compaction + codebase case-facts | Pin paths/invariants; `/compact` focus |
+| LITM file dump mid-chat | Targeting + summary вместо 30 полных файлов |
 | Escalation criteria vs sentiment | Явные критерии + few-shot; sentiment orthogonal |
 | Structured error / never silent [] | is_error + timeout context координатору |
 | HITL structured packet | case-facts + reason + recommended_action |
@@ -86,3 +91,5 @@
 | 2026-09-20 утро | Session resume/fork: continue, resume, fork_session, CLI --fork-session /branch | D1 | [файл](2026-09-20-morning-session.md) |
 | 2026-09-20 вечер | CI/CD `-p` + structured output + iterative refinement | D3 | [файл](2026-09-20-evening-cicd-iterative.md) |
 | 2026-09-21 утро | Message Batches + multi-pass independent review | D4 | [файл](2026-09-21-morning-batches-multipass.md) |
+| 2026-09-21 вечер | Escalation / HITL / error propagation / confidence | D5 | [файл](2026-09-21-evening-escalation-hitl.md) |
+| 2026-09-22 утро | Large codebase context: explore-first, scoped explorer, case-facts, lean CLAUDE.md | D5 | [файл](2026-09-22-morning-large-codebase.md) |
